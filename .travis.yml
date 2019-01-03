@@ -17,8 +17,6 @@ before_install:
 
   # Use a docker image from the hub and run it
   #- docker pull holochain/holochain-proto:develop
-  - docker run --name holochain -p 3141:3141 holochain/holochain-proto:develop /bin/bash -c "pwd; ls -lash; hcadmin -v; hcdev test"
+  #- docker run --name holochain -p 3141:3141 holochain/holochain-proto:develop /bin/bash -c "pwd; ls -lash; hcadmin -v; hcdev test"
 
 script:
-  - docker container ls -a
-  - pwd
